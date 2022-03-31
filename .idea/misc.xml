@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/U_M19Q2/AndroidStudioProjects/online_market/app/src/main/res/drawable/bg_bottom_navigation_layout_rounded.xml" value="0.1905" />
+        <entry key="..\:/Users/U_M19Q2/AndroidStudioProjects/online_market/app/src/main/res/drawable/bg_btn_category.xml" value="0.1905" />
+        <entry key="..\:/Users/U_M19Q2/AndroidStudioProjects/online_market/app/src/main/res/drawable/bg_btn_select_count.xml" value="0.1905" />
+        <entry key="..\:/Users/U_M19Q2/AndroidStudioProjects/online_market/app/src/main/res/drawable/bg_btn_show_filters.xml" value="0.1905" />
+        <entry key="..\:/Users/U_M19Q2/AndroidStudioProjects/online_market/app/src/main/res/drawable/bg_count_items_cart.xml" value="0.1905" />
+        <entry key="..\:/Users/U_M19Q2/AndroidStudioProjects/online_market/app/src/main/res/drawable/bg_edit_text_search.xml" value="0.1905" />
+        <entry key="..\:/Users/U_M19Q2/AndroidStudioProjects/online_market/app/src/main/res/drawable/black_circle.xml" value="0.1905" />
+        <entry key="..\:/Users/U_M19Q2/AndroidStudioProjects/online_market/app/src/main/res/drawable/bottom_navigation.xml" value="0.1905" />
+        <entry key="..\:/Users/U_M19Q2/AndroidStudioProjects/online_market/app/src/main/res/drawable/btn_select_count.xml" value="0.1905" />
+        <entry key="..\:/Users/U_M19Q2/AndroidStudioProjects/online_market/app/src/main/res/drawable/btn_show_filters.xml" value="0.1905" />
+        <entry key="..\:/Users/U_M19Q2/AndroidStudioProjects/online_market/app/src/main/res/drawable/category.xml" value="0.1905" />
+        <entry key="..\:/Users/U_M19Q2/AndroidStudioProjects/online_market/app/src/main/res/drawable/circle_orange.xml" value="0.1905" />
+        <entry key="..\:/Users/U_M19Q2/AndroidStudioProjects/online_market/app/src/main/res/drawable/count_item_cart.xml" value="0.1905" />
+        <entry key="..\:/Users/U_M19Q2/AndroidStudioProjects/online_market/app/src/main/res/drawable/custom_ratingbar.xml" value="0.1905" />
+        <entry key="..\:/Users/U_M19Q2/AndroidStudioProjects/online_market/app/src/main/res/drawable/custom_ratingbar_dm.xml" value="0.1905" />
+        <entry key="..\:/Users/U_M19Q2/AndroidStudioProjects/online_market/app/src/main/res/drawable/custom_ratingbar_empty.xml" value="0.1905" />
+        <entry key="..\:/Users/U_M19Q2/AndroidStudioProjects/online_market/app/src/main/res/drawable/custom_ratingbar_filled.xml" value="0.1905" />
+        <entry key="..\:/Users/U_M19Q2/AndroidStudioProjects/online_market/app/src/main/res/drawable/edit_text.xml" value="0.1905" />
+        <entry key="..\:/Users/U_M19Q2/AndroidStudioProjects/online_market/app/src/main/res/drawable/favorite_best.xml" value="0.1905" />
+        <entry key="..\:/Users/U_M19Q2/AndroidStudioProjects/online_market/app/src/main/res/drawable/favourite_best_seller_selector.xml" value="0.1905" />
+        <entry key="..\:/Users/U_M19Q2/AndroidStudioProjects/online_market/app/src/main/res/drawable/ic_arrow_back.xml" value="0.1905" />
+        <entry key="..\:/Users/U_M19Q2/AndroidStudioProjects/online_market/app/src/main/res/drawable/ic_arrow_bottom.xml" value="0.1905" />
+        <entry key="..\:/Users/U_M19Q2/AndroidStudioProjects/online_market/app/src/main/res/drawable/ic_arrow_down.xml" value="0.1905" />
+        <entry key="..\:/Users/U_M19Q2/AndroidStudioProjects/online_market/app/src/main/res/drawable/ic_books.xml" value="0.1905" />
+        <entry key="..\:/Users/U_M19Q2/AndroidStudioProjects/online_market/app/src/main/res/drawable/ic_camera.xml" value="0.1905" />
+        <entry key="..\:/Users/U_M19Q2/AndroidStudioProjects/online_market/app/src/main/res/drawable/ic_card.xml" value="0.1905" />
+        <entry key="..\:/Users/U_M19Q2/AndroidStudioProjects/online_market/app/src/main/res/drawable/ic_cart.xml" value="0.1905" />
+        <entry key="..\:/Users/U_M19Q2/AndroidStudioProjects/online_market/app/src/main/res/drawable/ic_close.xml" value="0.1905" />
+        <entry key="..\:/Users/U_M19Q2/AndroidStudioProjects/online_market/app/src/main/res/drawable/ic_code.xml" value="0.1905" />
+        <entry key="..\:/Users/U_M19Q2/AndroidStudioProjects/online_market/app/src/main/res/drawable/ic_computer.xml" value="0.1905" />
+        <entry key="..\:/Users/U_M19Q2/AndroidStudioProjects/online_market/app/src/main/res/drawable/ic_cpu.xml" value="0.1905" />
+        <entry key="..\:/Users/U_M19Q2/AndroidStudioProjects/online_market/app/src/main/res/drawable/ic_eclipse.xml" value="0.1905" />
+        <entry key="..\:/Users/U_M19Q2/AndroidStudioProjects/online_market/app/src/main/res/drawable/ic_error.xml" value="0.1905" />
+        <entry key="..\:/Users/U_M19Q2/AndroidStudioProjects/online_market/app/src/main/res/drawable/ic_favorite.xml" value="0.1905" />
+        <entry key="..\:/Users/U_M19Q2/AndroidStudioProjects/online_market/app/src/main/res/drawable/ic_favorite_detail.xml" value="0.1905" />
+        <entry key="..\:/Users/U_M19Q2/AndroidStudioProjects/online_market/app/src/main/res/drawable/ic_favorite_off.xml" value="0.1905" />
+        <entry key="..\:/Users/U_M19Q2/AndroidStudioProjects/online_market/app/src/main/res/drawable/ic_favorite_off_detail.xml" value="0.1905" />
+        <entry key="..\:/Users/U_M19Q2/AndroidStudioProjects/online_market/app/src/main/res/drawable/ic_favorite_on.xml" value="0.1905" />
+        <entry key="..\:/Users/U_M19Q2/AndroidStudioProjects/online_market/app/src/main/res/drawable/ic_favorite_on_detail.xml" value="0.1905" />
+        <entry key="..\:/Users/U_M19Q2/AndroidStudioProjects/online_market/app/src/main/res/drawable/ic_filters.xml" value="0.1905" />
+        <entry key="..\:/Users/U_M19Q2/AndroidStudioProjects/online_market/app/src/main/res/drawable/ic_gps.xml" value="0.1905" />
+        <entry key="..\:/Users/U_M19Q2/AndroidStudioProjects/online_market/app/src/main/res/drawable/ic_health.xml" value="0.1905" />
+        <entry key="..\:/Users/U_M19Q2/AndroidStudioProjects/online_market/app/src/main/res/drawable/ic_laucher_foreground.xml" value="0.1905" />
+        <entry key="..\:/Users/U_M19Q2/AndroidStudioProjects/online_market/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1905" />
+        <entry key="..\:/Users/U_M19Q2/AndroidStudioProjects/online_market/app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.1905" />
+        <entry key="..\:/Users/U_M19Q2/AndroidStudioProjects/online_market/app/src/main/res/drawable/ic_minus.xml" value="0.1905" />
+        <entry key="..\:/Users/U_M19Q2/AndroidStudioProjects/online_market/app/src/main/res/drawable/ic_new.xml" value="0.1905" />
+        <entry key="..\:/Users/U_M19Q2/AndroidStudioProjects/online_market/app/src/main/res/drawable/ic_plus.xml" value="0.1905" />
+        <entry key="..\:/Users/U_M19Q2/AndroidStudioProjects/online_market/app/src/main/res/drawable/ic_point.xml" value="0.1905" />
+        <entry key="..\:/Users/U_M19Q2/AndroidStudioProjects/online_market/app/src/main/res/drawable/ic_profile.xml" value="0.1905" />
+        <entry key="..\:/Users/U_M19Q2/AndroidStudioProjects/online_market/app/src/main/res/drawable/ic_ram.xml" value="0.1905" />
+        <entry key="..\:/Users/U_M19Q2/AndroidStudioProjects/online_market/app/src/main/res/drawable/ic_remove.xml" value="0.1905" />
+        <entry key="..\:/Users/U_M19Q2/AndroidStudioProjects/online_market/app/src/main/res/drawable/ic_sd.xml" value="0.1905" />
+        <entry key="..\:/Users/U_M19Q2/AndroidStudioProjects/online_market/app/src/main/res/drawable/ic_search.xml" value="0.1905" />
+        <entry key="..\:/Users/U_M19Q2/AndroidStudioProjects/online_market/app/src/main/res/drawable/ic_selected.xml" value="0.1905" />
+        <entry key="..\:/Users/U_M19Q2/AndroidStudioProjects/online_market/app/src/main/res/drawable/ic_shop.xml" value="0.1905" />
+        <entry key="..\:/Users/U_M19Q2/AndroidStudioProjects/online_market/app/src/main/res/drawable/ic_smartphone.xml" value="0.1905" />
+        <entry key="..\:/Users/U_M19Q2/AndroidStudioProjects/online_market/app/src/main/res/drawable/memory_radio_button_normal.xml" value="0.1905" />
+        <entry key="..\:/Users/U_M19Q2/AndroidStudioProjects/online_market/app/src/main/res/drawable/memory_radio_button_selected.xml" value="0.1905" />
+        <entry key="..\:/Users/U_M19Q2/AndroidStudioProjects/online_market/app/src/main/res/drawable/memory_radio_button_selector.xml" value="0.1905" />
+        <entry key="..\:/Users/U_M19Q2/AndroidStudioProjects/online_market/app/src/main/res/drawable/memory_radio_button_text_color.xml" value="0.1905" />
+        <entry key="..\:/Users/U_M19Q2/AndroidStudioProjects/online_market/app/src/main/res/drawable/rating_bar.xml" value="0.1905" />
+        <entry key="..\:/Users/U_M19Q2/AndroidStudioProjects/online_market/app/src/main/res/drawable/rating_bar_dm.xml" value="0.1905" />
+        <entry key="..\:/Users/U_M19Q2/AndroidStudioProjects/online_market/app/src/main/res/drawable/rating_bar_empty.xml" value="0.1905" />
+        <entry key="..\:/Users/U_M19Q2/AndroidStudioProjects/online_market/app/src/main/res/drawable/rating_bar_filed.xml" value="0.1905" />
+        <entry key="..\:/Users/U_M19Q2/AndroidStudioProjects/online_market/app/src/main/res/drawable/splash_bg.xml" value="0.1905" />
+        <entry key="..\:/Users/U_M19Q2/AndroidStudioProjects/online_market/app/src/main/res/layout/activity_main.xml" value="0.2296875" />
+        <entry key="..\:/Users/U_M19Q2/AndroidStudioProjects/online_market/app/src/main/res/layout/activity_splash_screen.xml" value="0.264" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
