@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragmentCartRootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ColorScreen"
+    tools:context=".features.cartScreen.presentation.fragments.CartFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideLine_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="@dimen/guide_line_margin" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideLine_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="@dimen/guide_line_margin" />
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="@dimen/btn_back_cart_width"
+            android:layout_height="@dimen/btn_back_cart_height"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/cyan_dark"
+            android:insetLeft="@dimen/btn_back_cart_inset_left"
+            android:insetTop="@dimen/btn_back_cart_inset_top"
+            android:insetRight="@dimen/btn_back_cart_inset_right"
+            android:insetBottom="@dimen/btn_back_cart_inset_bottom"
+            app:icon="@drawable/ic_arrow_back"
+            app:iconGravity="textStart"
+            app:iconPadding="@dimen/btn_back_cart_icon_padding"
+            app:layout_constraintStart_toEndOf="@id/guideLine_1"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/add_address_margin_end"
+            android:fontFamily="@font/mark_medium"
+            android:text="@string/add_address"
+            android:textColor="@color/cyan_dark"
+            android:textSize="@dimen/add_address_text_size"
+            app:layout_constraintBaseline_toBaselineOf="@+id/btnBack"
+            app:layout_constraintEnd_toStartOf="@id/btnAddAddress" />
+
+        <Button
+            android:id="@+id/btnAddAddress"
+            android:layout_width="@dimen/add_address_btn_width"
+            android:layout_height="@dimen/add_address_btn_height"
+            android:layout_marginTop="@dimen/add_address_btn_margin_top"
+            android:insetLeft="@dimen/add_address_btn_inset_left"
+            android:insetTop="@dimen/add_address_btn_inset_top"
+            android:insetRight="@dimen/add_address_btn_inset_right"
+            android:insetBottom="@dimen/add_address_btn_inset_bottom"
+            app:icon="@drawable/ic_gps"
+            app:iconGravity="textStart"
+            app:iconPadding="@dimen/add_address_btn_icon_padding"
+            app:layout_constraintBaseline_toBaselineOf="@+id/btnBack"
+            app:layout_constraintEnd_toStartOf="@id/guideLine_2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/my_cart_title_margin_top"
+            android:fontFamily="@font/mark_medium"
+            android:text="@string/my_cart"
+            android:textColor="@color/cyan_dark"
+            android:textSize="@dimen/my_cart_title_text_size"
+            app:layout_constraintStart_toEndOf="@id/guideLine_1"
+            app:layout_constraintTop_toBottomOf="@id/btnBack" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <include
+        android:id="@+id/bottom_sheet_cart"
+        layout="@layout/bottom_sheet_cart" />
+
+    <include
+        android:id="@+id/progressBarLayout"
+        layout="@layout/loading_layout" />
+
+    <include layout="@layout/error_layout"
+        android:id="@+id/error_layout"
+        android:visibility="invisible"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

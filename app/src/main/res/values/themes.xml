@@ -13,4 +13,98 @@
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
+
+    <style name="btn_location" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="backgroundTint">@color/ColorScreen</item>
+        <item name="android:textColor">@color/cyan_dark</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:fontFamily">@font/mark_medium</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:foreground">?attr/selectableItemBackgroundBorderless</item>
+        <item name="icon">@drawable/ic_gps</item>
+        <item name="android:drawableEnd">@drawable/ic_arrow_down</item>
+        <item name="iconPadding">10dp</item>
+    </style>
+
+    <style name="Widget.App.Button.OutlinedButton.IconOnly" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="iconPadding">0dp</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:paddingLeft">12dp</item>
+        <item name="android:paddingRight">12dp</item>
+        <item name="android:minWidth">48dp</item>
+        <item name="android:minHeight">48dp</item>
+        <item name="android:foreground">?attr/selectableItemBackgroundBorderless</item>
+    </style>
+
+    <style name="Widget.App.Button.OutlinedButton.IconOnly.ItemCategory" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="iconPadding">0dp</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:paddingLeft">30dp</item>
+        <item name="android:paddingRight">30dp</item>
+        <item name="android:minWidth">71dp</item>
+        <item name="android:minHeight">71dp</item>
+        <item name="android:foreground">?attr/selectableItemBackgroundBorderless</item>
+    </style>
+
+    <style name="OrangeTextButton" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="android:textColor">@color/orange</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="fontFamily">@font/mark_pro</item>
+    </style>
+
+    <style name="TitleTextView">
+        <item name="android:textColor">@color/cyan_dark</item>
+        <item name="fontFamily">@font/mark_bold</item>
+        <item name="android:textSize">25sp</item>
+    </style>
+
+    <style name="ProgressBarStyle">
+        <item name="colorAccent">@color/orange</item>
+    </style>
+
+    <style name="MyCardView" parent="@style/Widget.MaterialComponents.CardView">
+        <item name="shapeAppearanceOverlay">@style/MaterialCardView.Cut</item>
+    </style>
+
+    <style name="MaterialCardView.Cut" parent="ShapeAppearanceOverlay">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopRight">30dp</item>
+        <item name="cornerSizeTopLeft">30dp</item>
+        <item name="cornerSizeBottomRight">0dp</item>
+        <item name="cornerSizeBottomLeft">0dp</item>
+    </style>
+
+    <style name="CustomRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/custom_ratingbar</item>
+        <item name="minWidth">14dp</item>
+        <item name="maxWidth">14dp</item>
+        <item name="android:minHeight">16dp</item>
+        <item name="android:maxHeight">16dp</item>
+    </style>
+
+    <style name="CustomRatingBarDetailMovie" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/custom_ratingbar_dm</item>
+    </style>
+
+    <style name="tab_text" parent="@android:style/TextAppearance.Widget.TabWidget">
+        <item name="android:fontFamily">@font/mark_bold</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="BottomSheetDialogTheme" parent="Theme.Design.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/BottomSheetStyle</item>
+    </style>
+
+    <style name="BottomSheetStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@drawable/splash_bg</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
 </resources>

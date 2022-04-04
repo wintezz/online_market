@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RadioButton
+        android:id="@+id/memoryRadioBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/memory_radio_btn_height"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:button="@android:color/transparent"
+        android:fontFamily="@font/mark_bold"
+        android:background="@drawable/memory_radio_button_selector"
+        tools:text="128 GB"
+        android:paddingStart="@dimen/memory_radio_btn_padding_start"
+        android:paddingEnd="@dimen/memory_radio_btn_padding_end"
+        android:textColor="@drawable/memory_radio_button_text_color"
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackgroundBorderless"
+        android:focusable="true"
+        tools:ignore="UnusedAttribute" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

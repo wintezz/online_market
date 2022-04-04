@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_graph"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.online_market.MainScreen.presentation.fragments.MainFragment"
+        tools:layout="@layout/fragment_main">
+
+        <action
+            android:id="@+id/action_main_fragment_to_cart_fragment"
+            app:destination="@+id/cartFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="com.example.online_market.DetailScreen.presentation.fragments.DetailFragment"
+        tools:layout="@layout/fragment_detail">
+
+        <action
+            android:id="@+id/action_detail_fragment_to_main_fragment"
+            app:destination="@+id/mainFragment" />
+
+        <action
+            android:id="@+id/action_detail_fragment_to_cart_fragment"
+            app:destination="@+id/cartFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/cartFragment"
+        android:name="com.example.online_market.CartScreen.presentation.fragments.CartFragment"
+        tools:layout="@layout/fragment_cart">
+
+        <action
+            android:id="@+id/action_cart_fragment_to_main_fragment"
+            app:destination="@+id/mainFragment" />
+
+        <action
+            android:id="@+id/action_cart_fragment_to_detail_fragment"
+            app:destination="@+id/detailFragment" />
+
+    </fragment>
+
+</navigation>

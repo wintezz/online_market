@@ -39,6 +39,9 @@ android {
 
 dependencies {
 
+    implementation project(path: ':domain')
+    implementation project(path: ':data')
+
     // ViewModel
     implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.1'
     // LiveData
@@ -47,11 +50,14 @@ dependencies {
     implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.4.1'
     // Saved state module for ViewModel
     implementation 'androidx.lifecycle:lifecycle-viewmodel-savedstate:2.4.1'
+    implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0'
     // Annotation processor
     kapt 'androidx.lifecycle:lifecycle-compiler:2.4.1'
 
     // Retrofit
     implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'org.jetbrains.kotlinx:kotlinx-serialization-json:1.2.2'
+    implementation 'com.jakewharton.retrofit:retrofit2-kotlinx-serialization-converter:0.8.0'
     implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
     implementation 'com.google.code.gson:gson:2.9.0'
 
@@ -65,6 +71,14 @@ dependencies {
     // Koin
     implementation 'io.insert-koin:koin-core:3.1.5'
     implementation 'io.insert-koin:koin-android:3.1.5'
+
+    // Glide
+    implementation 'com.github.bumptech.glide:glide:4.12.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.12.0'
+    implementation 'com.github.markushi:circlebutton:1.1'
+
+    // Rounded ImageView
+    implementation 'com.makeramen:roundedimageview:2.3.0'
 
     implementation 'androidx.core:core-ktx:1.7.0'
     implementation 'androidx.appcompat:appcompat:1.4.1'

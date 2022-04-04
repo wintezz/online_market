@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:background="@color/ColorScreen">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:elevation="@dimen/card_view_item_phone_image_evelation"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0.0px"
+        android:clipToPadding="false"
+        android:clipChildren="false"
+        card_view:cardElevation="@dimen/card_view_item_phone_image_card_elevation"
+        card_view:cardPreventCornerOverlap="false"
+        app:cardCornerRadius="@dimen/card_view_item_phone_image_corner_radius"
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackgroundBorderless"
+        android:focusable="true">
+
+        <ImageView
+            android:id="@+id/imgPhoneSlider"
+            android:layout_width="@dimen/phone_slide_imageview_width"
+            android:layout_height="@dimen/phone_slide_imageview_height"
+            tools:srcCompat="@tools:sample/avatars"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center_horizontal"
+            tools:ignore="ContentDescription" />
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

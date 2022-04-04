@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainFragmentRootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ColorScreen"
+    tools:context=".features.detailsScreen.presentation.fragments.DetailFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideLine_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="@dimen/guide_line_margin" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideLine_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="@dimen/guide_line_margin" />
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="@dimen/btn_back_detail_fragment_width"
+            android:layout_height="@dimen/btn_back_detail_fragment_height"
+            android:layout_marginTop="@dimen/btn_back_detail_fragment_margin_top"
+            android:backgroundTint="@color/cyan_dark"
+            android:insetLeft="@dimen/btn_back_detail_fragment_inset_left"
+            android:insetTop="@dimen/btn_back_detail_fragment_inset_top"
+            android:insetRight="@dimen/btn_back_detail_fragment_inset_right"
+            android:insetBottom="@dimen/btn_back_detail_fragment_inset_bottom"
+            app:icon="@drawable/ic_arrow_back"
+            app:iconGravity="textStart"
+            app:iconPadding="@dimen/btn_back_detail_fragment_icon_padding"
+            app:layout_constraintStart_toEndOf="@id/guideLine_1"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/mark_medium"
+            android:text="@string/product_details"
+            android:textColor="@color/cyan_dark"
+            android:textSize="@dimen/product_details_text_size"
+            app:layout_constraintBaseline_toBaselineOf="@+id/btnBack"
+            app:layout_constraintEnd_toStartOf="@id/btnCart"
+            app:layout_constraintStart_toEndOf="@id/btnBack" />
+
+        <Button
+            android:id="@+id/btnCart"
+            android:layout_width="@dimen/btn_cart_detail_fragment_width"
+            android:layout_height="@dimen/btn_cart_detail_fragment_height"
+            android:layout_marginTop="@dimen/btn_cart_detail_fragment_margin_top"
+            android:insetLeft="@dimen/btn_cart_detail_fragment_inset_left"
+            android:insetTop="@dimen/btn_cart_detail_fragment_inset_top"
+            android:insetRight="@dimen/btn_cart_detail_fragment_inset_right"
+            android:insetBottom="@dimen/btn_cart_detail_fragment_inset_bottom"
+            app:icon="@drawable/ic_cart"
+            app:iconGravity="textStart"
+            app:iconPadding="@dimen/btn_cart_detail_fragment_icon_padding"
+            app:layout_constraintBaseline_toBaselineOf="@+id/btnBack"
+            app:layout_constraintEnd_toStartOf="@id/guideLine_2" />
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/vp2PhonePhotos"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/vp2_phone_photos_height"
+            android:layout_marginTop="@dimen/vp2_phone_photos_margin_top"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btnBack" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <include
+        android:id="@+id/bottom_sheet_detail_phone"
+        layout="@layout/bottom_sheet_detail_phone" />
+
+    <include
+        android:id="@+id/progressBarLayout"
+        layout="@layout/loading_layout"
+        android:visibility="invisible" />
+
+    <include layout="@layout/error_layout"
+        android:id="@+id/error_layout"
+        android:visibility="invisible"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

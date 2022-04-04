@@ -1,4 +1,65 @@
 <resources>
-    <string name="app_name">online_market</string>
-    <string name="ecommerce_concept">Ecommerce Concept</string>
+    <string name="app_name">Smartphone_Shop</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="explorer">Explorer</string>
+    <string name="shop">Shop</string>
+    <string name="favorite">Favorite</string>
+    <string name="profile">Profile</string>
+    <string name="filters">filters</string>
+    <string name="select_category">Select Category</string>
+    <string name="view_all">view all</string>
+    <string name="circle">circle</string>
+    <string name="search">Search</string>
+    <string name="hot_sales">Hot sales</string>
+    <string name="best_seller">Best Seller</string>
+    <string name="image_phone_description">Изображение смартфона</string>
+    <string name="tools_text_price_phone">$1,047</string>
+    <string name="tools_text_name_phone">Samsung Galaxy s20 Ultra</string>
+    <string name="home_store_img_description">Картинка слайдера Home Store</string>
+    <string name="buy_now">Buy Now</string>
+    <string name="api_key">6c14c560–15c6-4248-b9d2-b4508df7d4f5</string>
+    <string name="shadow">Тень</string>
+    <string name="phone_price">%s$</string>
+    <string name="phone_price_add_cart_button">Add to Cart $%s</string>
+    <string name="price_item_cart">$%s</string>
+    <string name="total_price_cart">$%s us</string>
+    <string name="product_details">Product Details</string>
+    <string name="no_data">Нет данных</string>
+    <string name="ram">ram</string>
+    <string name="exception">Произошла ошибка!</string>
+    <string name="add_address">Add address</string>
+    <string name="my_cart">My Cart</string>
+    <string name="total">Total</string>
+    <string name="delivery">Delivery</string>
+    <string name="checkout">Checkout</string>
+    <string name="filter_options">Filter options</string>
+    <string name="done">Done</string>
+    <string name="brand">Brand</string>
+    <string name="price">Price</string>
+    <string name="size">Size</string>
+    <string name="select_color_and_capacity">Select color and capacity</string>
+    <string name="add_to_cart_1500">Add to Cart $1,500.00</string>
+    <string name="zihuatanejo_gro">Zihuatanejo, Gro</string>
+    <string name="error">Произошла ошибка!</string>
+    <string name="retry">Повторить</string>
+
+    <string-array name="brand_list">
+        <item>Samsung</item>
+        <item>Apple</item>
+        <item>Xiaomi</item>
+    </string-array>
+
+    <string-array name="price_list">
+        <item>$0-$300</item>
+        <item>$300-$700</item>
+        <item>$700-$1000</item>
+    </string-array>
+
+    <string-array name="size_list">
+        <item>4.5 to 5.5 inches</item>
+        <item>5.5 to 6.0 inches</item>
+        <item>6.0 to 6.8 inches</item>
+    </string-array>
+
+    <string name="base_url">https://run.mocky.io/v3/654bd15e–b121-49ba-a588-960956b15175</string>
 </resources>

@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainFragmentRootLayout"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ColorScreen"
+    tools:context=".features.mainScreen.presentation.fragments.MainFragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideLine_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="@dimen/guide_line_margin"/>
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideLine_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_end="@dimen/guide_line_margin"/>
+
+            <Button
+                android:id="@+id/btnLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/btn_location_height"
+                android:text="@string/zihuatanejo_gro"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                style="@style/btn_location" />
+
+            <ImageButton
+                android:id="@+id/btnFiltersShow"
+                android:layout_width="@dimen/btn_filters_show_width"
+                android:layout_height="@dimen/btn_filters_show_height"
+                android:background="@drawable/bg_btn_show_filters"
+                android:insetLeft="@dimen/btn_filters_show_inset_left"
+                android:insetTop="@dimen/btn_filters_show_inset_top"
+                android:insetRight="@dimen/btn_filters_show_inset_right"
+                android:insetBottom="@dimen/btn_filters_show_inset_bottom"
+                android:src="@drawable/ic_filters"
+                app:iconGravity="textStart"
+                app:iconPadding="@dimen/btn_filters_show_icon_padding"
+                app:iconTint="@color/cyan_dark"
+                app:layout_constraintBaseline_toBaselineOf="@id/btnLocation"
+                app:layout_constraintEnd_toStartOf="@id/guideLine_2"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:focusable="true"
+                tools:ignore="ContentDescription,UnusedAttribute" />
+
+            <TextView
+                android:id="@+id/tvSelectViewTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/select_category"
+                style="@style/TitleTextView"
+                app:layout_constraintStart_toEndOf="@id/guideLine_1"
+                app:layout_constraintTop_toBottomOf="@id/btnLocation"
+                android:layout_marginTop="@dimen/select_category_textview_margin_bottom"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/view_all"
+                style="@style/OrangeTextButton"
+                app:layout_constraintEnd_toStartOf="@id/guideLine_2"
+                app:layout_constraintBaseline_toBaselineOf="@id/tvSelectViewTitle"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvCategory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvSelectViewTitle"
+                android:layout_marginTop="@dimen/rv_category_margin_top"
+                tools:listitem="@layout/item_category"
+                android:orientation="horizontal"
+                tools:itemCount="4"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+
+            <EditText
+                android:id="@+id/etSearch"
+                android:layout_width="@dimen/search_edit_text_width"
+                android:layout_height="@dimen/search_edit_text_height"
+                android:hint="@string/search"
+                app:layout_constraintTop_toBottomOf="@id/rvCategory"
+                app:layout_constraintStart_toStartOf="@id/guideLine_1"
+                app:layout_constraintEnd_toStartOf="@id/btnCode"
+                android:background="@drawable/bg_edit_text_search"
+                android:fontFamily="@font/mark_pro"
+                android:textSize="@dimen/search_edit_text_text_size"
+                android:drawableStart="@drawable/ic_search"
+                android:paddingStart="@dimen/search_edit_text_padding_start"
+                android:drawablePadding="@dimen/search_edit_text_drawable_padding"
+                android:layout_marginEnd="@dimen/search_edit_text_margin_end"
+                android:layout_marginTop="@dimen/search_edit_text_margin_top"
+                tools:ignore="RtlSymmetry"
+                android:elevation="@dimen/search_edit_text_elevation"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnCode"
+                android:layout_width="@dimen/btn_code_width"
+                android:layout_height="@dimen/btn_code_height"
+                android:insetLeft="@dimen/btn_code_inset_left"
+                android:insetTop="@dimen/btn_code_inset_top"
+                android:insetRight="@dimen/btn_code_inset_right"
+                android:insetBottom="@dimen/btn_code_inset_bottom"
+                app:icon="@drawable/ic_code"
+                android:background="@drawable/circle_orange"
+                app:iconGravity="textStart"
+                app:iconPadding="@dimen/btn_code_icon_padding"
+                app:layout_constraintBaseline_toBaselineOf="@id/etSearch"
+                app:layout_constraintEnd_toStartOf="@id/guideLine_2"
+                app:layout_constraintStart_toEndOf="@id/etSearch"/>
+
+            <TextView
+                android:id="@+id/tvHotSalesTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hot_sales"
+                style="@style/TitleTextView"
+                app:layout_constraintStart_toEndOf="@id/guideLine_1"
+                app:layout_constraintTop_toBottomOf="@id/etSearch"
+                android:layout_marginTop="@dimen/hot_sales_title_margin_top"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/view_all"
+                style="@style/OrangeTextButton"
+                app:layout_constraintEnd_toStartOf="@id/guideLine_2"
+                app:layout_constraintBaseline_toBaselineOf="@id/tvHotSalesTitle"/>
+
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/vp2HomeStore"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/vp2_home_store_height"
+                android:layout_marginTop="@dimen/vp2_home_store_margin_top"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/tvBestSellerTitle"
+                app:layout_constraintTop_toBottomOf="@id/tvHotSalesTitle"/>
+
+            <TextView
+                android:id="@+id/tvBestSellerTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/best_seller"
+                style="@style/TitleTextView"
+                app:layout_constraintStart_toEndOf="@id/guideLine_1"
+                app:layout_constraintTop_toBottomOf="@id/vp2HomeStore"
+                android:layout_marginTop="@dimen/best_seller_title_margin_top"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/view_all"
+                style="@style/OrangeTextButton"
+                app:layout_constraintEnd_toStartOf="@id/guideLine_2"
+                app:layout_constraintBaseline_toBaselineOf="@id/tvBestSellerTitle"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvPhones"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/tvBestSellerTitle"
+                app:layout_constraintStart_toStartOf="@id/guideLine_1"
+                app:layout_constraintEnd_toEndOf="@id/guideLine_2"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginTop="@dimen/rv_phones_margin_top"
+                android:layout_marginBottom="@dimen/rv_phones_margin_bottom"
+                tools:itemCount="2"
+                tools:listitem="@layout/item_phone"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <include layout="@layout/loading_layout"
+        android:id="@+id/progressBarLayout"
+        android:visibility="invisible"/>
+
+    <include layout="@layout/error_layout"
+        android:id="@+id/error_layout"
+        android:visibility="invisible"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

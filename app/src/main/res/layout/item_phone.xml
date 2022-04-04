@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cvPhoneRootLayout"
+    android:layout_width="@dimen/item_phone_card_view_width"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?attr/selectableItemBackgroundBorderless"
+    app:cardCornerRadius="@dimen/item_phone_card_view_corner_radius">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imgPhone"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_phone_imageview_height"
+            android:contentDescription="@string/image_phone_description"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <RadioButton
+            android:id="@+id/radioFavoriteBestSeller"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/item_phone_radio_favorite_height"
+            android:layout_marginTop="@dimen/item_phone_radio_favorite_margin_top"
+            android:background="@android:color/transparent"
+            android:button="@android:color/transparent"
+            android:drawableStart="@drawable/favourite_best_seller_selector"
+            android:drawablePadding="@dimen/item_phone_radio_favorite_drawable_padding"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvPriceWithSale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/price_with_sale_margin_start"
+            android:layout_marginTop="@dimen/price_with_sale_margin_top"
+            android:fontFamily="@font/mark_bold"
+            android:textColor="@color/cyan_dark"
+            android:textSize="@dimen/price_with_sale_text_size"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/imgPhone"
+            tools:text="@string/tools_text_price_phone" />
+
+        <TextView
+            android:id="@+id/tvPriceWithoutSale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/price_without_sale_margin_start"
+            android:fontFamily="@font/mark_medium"
+            android:textColor="@color/gray_100"
+            android:textSize="@dimen/price_without_sale_text_size"
+            app:layout_constraintBaseline_toBaselineOf="@id/tvPriceWithSale"
+            app:layout_constraintStart_toEndOf="@id/tvPriceWithSale"
+            tools:ignore="SmallSp"
+            tools:text="@string/tools_text_price_phone" />
+
+        <TextView
+            android:id="@+id/tvNamePhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/item_phone_name_phone_margin_start"
+            android:layout_marginTop="@dimen/item_phone_name_phone_margin_top"
+            android:layout_marginBottom="@dimen/item_phone_name_phone_margin_bottom"
+            android:fontFamily="@font/mark_pro"
+            android:textColor="@color/cyan_dark"
+            android:textSize="@dimen/item_phone_name_phone_text_size"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvPriceWithSale"
+            tools:ignore="SmallSp"
+            tools:text="@string/tools_text_name_phone" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cvBottomSheetBehavior"
+    style="@style/MyCardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:backgroundTint="@color/cyan_dark"
+    app:behavior_hideable="false"
+    app:behavior_peekHeight="@dimen/bottom_sheet_cart_peek_height"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/NestedScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideLine_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="@dimen/guide_line_margin" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideLine_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_end="@dimen/guide_line_margin" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvItemsCart"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toEndOf="@id/guideLine_1"
+                app:layout_constraintEnd_toStartOf="@id/guideLine_2"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:itemCount="2"
+                tools:listitem="@layout/item_cart"
+                android:layout_marginTop="@dimen/rv_items_cart_margin_top"/>
+
+            <View
+                android:id="@+id/viewHorizontalLine1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/view_horizontal_line_height"
+                android:background="@color/gray_100"
+                app:layout_constraintTop_toBottomOf="@id/rvItemsCart"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/tvTotal"
+                android:layout_marginTop="@dimen/view_horizontal_line_margin_top"/>
+
+            <TextView
+                android:id="@+id/tvTotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/total"
+                android:fontFamily="@font/mark_pro"
+                android:textSize="@dimen/total_text_view_text_size"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toEndOf="@id/guideLine_1"
+                app:layout_constraintTop_toBottomOf="@id/viewHorizontalLine1"
+                android:layout_marginTop="@dimen/total_text_view_margin_top"/>
+
+            <TextView
+                android:id="@+id/tvTotalPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="$6,000 us"
+                android:fontFamily="@font/mark_bold"
+                android:textSize="@dimen/total_price_text_view_text_size"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toStartOf="@id/guideLine_2"
+                app:layout_constraintBaseline_toBaselineOf="@id/tvTotal"
+                android:layout_marginTop="@dimen/total_price_text_view_margin_top"/>
+
+            <TextView
+                android:id="@+id/tvDelivery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/delivery"
+                android:fontFamily="@font/mark_pro"
+                android:textSize="@dimen/delivery_text_view_text_size"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toEndOf="@id/guideLine_1"
+                app:layout_constraintTop_toBottomOf="@id/tvTotal"
+                android:layout_marginTop="@dimen/delivery_text_view_margin_top"/>
+
+            <TextView
+                android:id="@+id/tvTypeDelivery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="Free"
+                android:fontFamily="@font/mark_bold"
+                android:textSize="@dimen/type_delivery_text_size"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toStartOf="@id/guideLine_2"
+                app:layout_constraintBaseline_toBaselineOf="@id/tvDelivery"
+                android:layout_marginTop="@dimen/type_delivery_margin_top"/>
+
+            <View
+                android:id="@+id/viewHorizontalLine2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/view_horizontal_line_2_height"
+                android:background="@color/gray_100"
+                app:layout_constraintTop_toBottomOf="@id/tvDelivery"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="@dimen/view_horizontal_line_2_margin_top"/>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="@dimen/checkout_button_height"
+                app:layout_constraintStart_toEndOf="@id/guideLine_1"
+                app:layout_constraintEnd_toStartOf="@id/guideLine_2"
+                app:layout_constraintTop_toBottomOf="@id/viewHorizontalLine2"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:text="@string/checkout"
+                android:fontFamily="@font/mark_bold"
+                android:layout_marginTop="@dimen/checkout_button_margin_top"
+                android:layout_marginBottom="@dimen/checkout_button_margin_bottom"/>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.cardview.widget.CardView>
