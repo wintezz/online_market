@@ -5,10 +5,8 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.online_market.App
-import com.example.online_market.CartScreen.repository.repositories.CartRepositoryImpl
 import com.example.online_market.CartScreen.repository.repositories.interfaces.CartRepository
-import com.example.online_market.CartScreen.repository.retrofit.entities.CartResponseItem
+import CartScreen.domain.retrofit.entities.CartResponseItem
 import com.example.online_market.helpers.ViewStateScreen
 import kotlinx.coroutines.CoroutineExceptionHandler
 import kotlinx.coroutines.Dispatchers

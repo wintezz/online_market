@@ -1,7 +1,7 @@
 package com.example.online_market
 
 import android.content.Context
-import com.example.online_market.CartScreen.repository.retrofit.CartApiService
+import CartScreen.domain.retrofit.CartApiService
 import com.example.online_market.CartScreen.domain.CartViewModel
 import com.example.online_market.CartScreen.repository.repositories.CartRepositoryImpl
 import com.example.online_market.CartScreen.repository.repositories.interfaces.CartRepository

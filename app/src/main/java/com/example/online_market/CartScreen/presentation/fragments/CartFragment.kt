@@ -13,14 +13,13 @@ import androidx.cardview.widget.CardView
 import androidx.coordinatorlayout.widget.CoordinatorLayout
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
-import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.online_market.R
 import com.example.online_market.CartScreen.domain.CartViewModel
 import com.example.online_market.CartScreen.presentation.adapters.CartAdapter
-import com.example.online_market.CartScreen.repository.retrofit.entities.Basket
-import com.example.online_market.CartScreen.repository.retrofit.entities.CartResponseItem
+import CartScreen.domain.retrofit.entities.Basket
+import CartScreen.domain.retrofit.entities.CartResponseItem
 import com.example.online_market.helpers.FragmentClickListener
 import com.example.online_market.helpers.ViewStateScreen
 import com.example.online_market.MainScreen.presentation.adapters.item_decoration.SpacesItemDecoration

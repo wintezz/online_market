@@ -13,7 +13,7 @@ import com.bumptech.glide.Glide
 import com.bumptech.glide.load.resource.bitmap.RoundedCorners
 import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions
 import com.example.online_market.R
-import com.example.online_market.CartScreen.repository.retrofit.entities.Basket
+import CartScreen.domain.retrofit.entities.Basket
 
 
 class CartAdapter(private val onTotalPriceChange: (Int) -> Unit) :

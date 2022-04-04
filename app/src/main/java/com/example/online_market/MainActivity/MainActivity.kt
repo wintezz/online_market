@@ -11,7 +11,7 @@ import androidx.lifecycle.Observer
 import androidx.navigation.NavController
 import androidx.navigation.findNavController
 import com.example.online_market.CartScreen.domain.CartViewModel
-import com.example.online_market.CartScreen.repository.retrofit.entities.CartResponseItem
+import CartScreen.domain.retrofit.entities.CartResponseItem
 import com.example.online_market.R
 import com.example.online_market.helpers.FragmentClickListener
 import org.koin.androidx.viewmodel.ext.android.viewModel

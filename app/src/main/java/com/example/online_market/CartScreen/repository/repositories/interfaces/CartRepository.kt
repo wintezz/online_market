@@ -1,6 +1,6 @@
 package com.example.online_market.CartScreen.repository.repositories.interfaces
 
-import com.example.online_market.CartScreen.repository.retrofit.entities.CartResponse
+import CartScreen.domain.retrofit.entities.CartResponse
 import retrofit2.Response
 
 interface CartRepository {
